@@ -1,0 +1,116 @@
+$mainColor: #28231D;
+$onHover: #E3242B;
+
+.navbar{
+    background-color:  white;
+    z-index: 999;
+    padding: 20PX 30PX;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .upperDiv{
+        display:flex;
+        justify-content: space-between;
+        gap: 15px;
+        align-items: center;
+        .logoDiv{
+            // flex: 1;
+            // text-align: right;
+        }
+        .searchDiv{
+            flex: 3;
+            display: flex;
+            background-color: white;
+            border: 2px solid $onHover;
+            border-radius: 50px;
+            color: black;
+            align-items: center;
+            padding: 0px 20px;
+            .search{
+                flex: 1;
+                height: 40px;
+                background: transparent;
+                border: none;
+                outline: none;
+            }
+            .searchIcon{
+                font-size: 24px;
+                color: $mainColor;
+                cursor: pointer;
+                &:hover{
+                    color: $onHover;
+                }
+            }
+        }
+        .toolsDiv{
+            flex: 2;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            .country{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                .flag{
+                    font-size: 15px;
+                }
+                .currency{
+                    font-size: 13px;
+                    .mwk{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .register{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .icon{
+                    font-size: 25px;
+                }
+                .words{
+                    font-size: 13px;
+                    .welcome{
+                        font-weight: 500;
+                    }
+                    .signin{
+                      .text1, .text2{
+                            cursor: pointer;
+                            &:hover{
+                                color: $onHover;
+                            }
+                      }  
+                    }
+                }
+            }
+            .cart22{
+                display: flex;
+                cursor: pointer;
+                gap: 5px;
+                align-items: center;
+                .aCart{
+                    font-size: large;
+                }
+                .words{
+                    .count{
+                        background-color: $onHover;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 20px;
+                        height: 20px;
+                        font-size: 12px;
+                    }
+                    .cartWord{
+                        font-size: 13PX;
+
+                    }
+                }
+
+            }
+        }
+        
+    }
+}

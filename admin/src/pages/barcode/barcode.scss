@@ -1,0 +1,39 @@
+.barcode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .container{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        .upper{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .lower{
+            background-color: white;
+            padding-left: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .icon{
+                font-size: 30px;
+            }
+            .code{
+                color: rgb(36, 35, 35);
+                flex: 1;
+                input{
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    
+                }
+            }
+        }
+        .footer{
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+}
